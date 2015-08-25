@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Default Examples</title>
+		<style>
+			form {
+				margin: 0;
+			}
+			textarea {
+				display: block;
+			}
+		</style>
+		<script charset="utf-8" src="kindeditor.js"></script>
+		<script charset="utf-8" src="lang/zh_CN.js"></script>
+		<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]');
+			});
+			function addhtml(content){
+				if ( editor.edit.designMode ) {
+					editor.insertHtml('<strong>插入HTML</strong>');
+				} else {
+					alert('请先转换到所见即所得模式') ;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h3>默认模式</h3>
+		<a href="###" onclick="addhtml('aaa')">InsertHtml</a>
+		<form>
+			<textarea name="content" style="width:800px;height:400px;visibility:hidden;">
+				<p>
+					<img border="0" alt="" src="http://kindsoft.net/images/logo_180_30.gif" />
+				</p>
+				</p>
+				KindEditor是一套开源的HTML可视化编辑器，主要用于让用户在网站上获得所见即所得编辑效果，兼容IE、Firefox、Chrome、Safari、Opera等主流浏览器。<br />
+				KindEditor使用JavaScript编写，可以无缝的与Java、.NET、PHP、ASP等程序接合。
+				KindEditor非常适合在CMS、商城、论坛、博客、Wiki、电子邮件等互联网应用上使用，2006年7月首次发布2.0以来，KindEditor依靠出色的用户体验和领先的技术不断扩大编辑器市场占有率，目前在国内已经成为最受欢迎的编辑器之一。 
+				</p>
+			</textarea>
+		</form>
+	</body>
+</html>

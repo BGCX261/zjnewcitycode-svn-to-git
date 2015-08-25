@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>swfupload</title>
+<link href="style/Style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="swfupload.js"></script>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="handlers.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript">
+	var uploadobject;
+	$(document).ready(function(){
+		uploadobject = new uploadPlugin("uploadobject");
+		uploadobject.Init();
+		});
+</script>
+</head>
+
+<body>
+<div class="mainbox">
+	<!--操作按钮-->
+	<div class="mainbox_top">
+		<ul>
+			<li id="add" style="background-position:bottom;"><span id="selectfile"></span></li>
+			<li id="upload" style="display:none;"></li>
+			<li id="delete" style="display:none;"></li>
+		</ul>
+	</div>
+	<!--上传列表-->
+	<div class="mainbox_left" style="display:none;">
+		<ul id="title">
+			<li class="no">序号</li>
+			<li class="status">状态</li>
+			<li class="name">名称</li>
+			<li class="size">大小</li>
+			<li class="progress">进度</li>
+			<li class="exec">操作</li>
+		</ul>
+	</div>
+	<!--提醒-->
+	<div class="clr"></div>
+	<div class="mainbox_bommon">
+		<ul>
+			<li id="tag"></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

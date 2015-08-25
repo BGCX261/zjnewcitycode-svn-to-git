@@ -1,0 +1,5 @@
+Template Name: IStudio
+Template Version: 2.0
+Template Description: IStudio风格,原作者Xu.hei。
+Template Author: angel(修改)
+Template Author URL: http://www.sablog.net
